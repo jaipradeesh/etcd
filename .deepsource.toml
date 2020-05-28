@@ -9,3 +9,15 @@ enabled = true
   [analyzers.meta]
   import_path = "go.etcd.io/etcd/v3"
   dependencies_vendored = true
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
+  [analyzers.meta]
+  dockerfile_paths = [
+    "Dockerfile-release",
+    "Dockerfile-release.arm64",
+    "Dockerfile-release.ppc64le",
+    "Dockerfile-release.s390x"
+  ]
