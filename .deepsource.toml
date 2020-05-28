@@ -1,0 +1,11 @@
+version = 1
+
+exclude_patterns = ["vendor/**"]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "go.etcd.io/etcd/v3"
+  dependencies_vendored = true
